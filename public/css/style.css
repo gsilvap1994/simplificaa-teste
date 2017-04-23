@@ -1,0 +1,28 @@
+body, html {
+  font-family: Raleway,sans-serif;
+}
+
+nav {
+  height: 143px;
+  background-color: #FFF;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: #F4F7F9;
+}
+
+.page-footer {
+  background-color: #EE4123;
+}
+
+.input-label{
+  color: #EE4123;
+  font-size: 1.7 em;
+}
