@@ -2,13 +2,17 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 const bodyParser = require('body-parser');
-
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
+
 
 // body-parser config
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// cors config
+app.use(cors());
 
 // views config
 app.engine('html', nunjucks.render);
