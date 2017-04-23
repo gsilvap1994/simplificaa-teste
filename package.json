@@ -1,0 +1,27 @@
+{
+  "name": "simplificaa-teste",
+  "version": "0.0.1",
+  "description": "Aplicação web para o teste da Simplificaa, software para um sistema de localização de oficinas a partir de um determinado cep. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsilvap1994/simplificaa-teste.git"
+  },
+  "keywords": [
+    "simplificaa",
+    "oficinas"
+  ],
+  "author": "Gabriel Pereira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gsilvap1994/simplificaa-teste/issues"
+  },
+  "homepage": "https://github.com/gsilvap1994/simplificaa-teste#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nunjucks": "^3.0.0"
+  }
+}
