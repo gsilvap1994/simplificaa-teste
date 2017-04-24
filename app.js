@@ -12,13 +12,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // cors config
-app.use(cors());
+var corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+app.use(cors(corsOptions));
 
 // views config
 app.engine('html', nunjucks.render);
 app.set('views', __dirname + '/app/views');
 app.set('view engine', 'html');
 app.use(express.static(__dirname + '/public'));
+
 
 // config port
 app.listen(port, function () {
