@@ -22,11 +22,12 @@ main {
   background-color: #EE4123;
 }
 
-.input-label{
+.title{
   color: #EE4123;
-  font-size: 1.7 em;
 }
 
-.btn-div {
-  margin-top: 3%;
+
+#map {
+  height: 400px;
+  width: 600px;
 }

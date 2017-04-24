@@ -23,20 +23,36 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col s5" style="padding-left: 10%;">
-            <span class="input-label">Insira o Cep:</span>
-            <div class="input-field inline">
-              <input type="text" name="CEP" id="CEP" placeholder="Cep">
+          <h5 class="title">Abaixo, digite um indereço ou cep, e então selecione entre as opções para ver as oficinas perto de você.</h5>
+          <div class="col s8">
+            <div class="input-field ">
+              <input type="text" name="address" id="address" >
+              <label for="address">Endereço/CEP</label>
             </div>
           </div>
-          <div class="col s7 btn-div">
+          <div class="col s4">
+
+            <!-- <select> -->
+              <!-- <option value="" disabled selected>Choose your option</option> -->
+              <!-- <option value="2">Option 2</option> -->
+              <!-- <option value="1">Option 1</option> -->
+              <!-- <option value="3">Option 3</option> -->
+            <!-- </select> -->
+            <!-- <label>Materialize Select</label> -->
+          </div>
+          <div class="col s12 btn-div">
             <button class="btn waves-effect waves-light" type="submit" name="action" id="search">Pronto
             </button>
           </div>
         </div>
+        <div id="map">
+
+        </div>
+
+
         <div class="row">
           <ol class="places-list">
-            
+
           </ol>
         </div>
       </div>
@@ -61,6 +77,9 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/searches.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX-diejy6o0Lx7kAuD3CrynDOQp25Yl2U&libraries=places"></script>
+    <!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="js/map.js"></script>
+    <!-- <script type="text/javascript" src="js/searches.js"></script> -->
   </body>
 </html>
