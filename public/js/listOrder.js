@@ -1,11 +1,14 @@
+var arrayOfLiIni = [];
+
 $('#list').click(function(){
-  var arrayOfLiIni = [];
-  $('.text-list').each(function(){
-    arrayOfLiIni.push(this);
-  });
+  console.log($('#selectOrder').val());
+  if(arrayOfLiIni.length == 0) {
+    $('.text-list').each(function(){
+      arrayOfLiIni.push(this);
+    });
+  }
 
   $('.error-list').text('');
-
   if($('.places-list').children().length == 0) {
     $('.error-list').text('Faça uma busca no topo da página para gerar uma lista');
   }
@@ -27,8 +30,12 @@ $('#list').click(function(){
   }
   else if($('#selectOrder').val() == 1){
     $('.places-list').empty();
+
     for (var i = 0; i < arrayOfLiIni.length; i++) {
-      $('.places-list').append(arrayOfLiIni[i]);
+      console.log(arrayOfLiIni[i])
+    }
+    for (var i = 0; i < arrayOfLiIni.length; i++) {
+        $('.places-list').append(arrayOfLiIni[i]);
     }
   }
 });
