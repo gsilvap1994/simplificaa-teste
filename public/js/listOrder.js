@@ -1,7 +1,6 @@
 var arrayOfLiIni = [];
 
 $('#list').click(function(){
-  console.log($('#selectOrder').val());
   if(arrayOfLiIni.length == 0) {
     $('.text-list').each(function(){
       arrayOfLiIni.push(this);
@@ -31,9 +30,6 @@ $('#list').click(function(){
   else if($('#selectOrder').val() == 1){
     $('.places-list').empty();
 
-    for (var i = 0; i < arrayOfLiIni.length; i++) {
-      console.log(arrayOfLiIni[i])
-    }
     for (var i = 0; i < arrayOfLiIni.length; i++) {
         $('.places-list').append(arrayOfLiIni[i]);
     }
