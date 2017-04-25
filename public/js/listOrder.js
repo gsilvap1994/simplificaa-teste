@@ -18,7 +18,7 @@ $('#list').click(function(){
       arrayOfLi.push(this);
     });
 
-    sortRating(arrayOfLiIni);
+    sortRating(arrayOfLi);
     $('.places-list').empty();
 
      for(var i = arrayOfLi.length-1; i >= 0; i--) {
