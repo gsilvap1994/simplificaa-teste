@@ -9,7 +9,6 @@ $('#list').click(function(){
   if($('.places-list').children().length == 0) {
     $('.error-list').text('Faça uma busca no topo da página para gerar uma lista');
   }
-  console.log("valor do select: "+$('#selectOrder').val());
   if ($('#selectOrder').val() == null) {
     $('.error-list').text('Escolha alguma opção.')
   }
@@ -29,7 +28,6 @@ $('#list').click(function(){
   else if($('#selectOrder').val() == 1){
     $('.places-list').empty();
     for (var i = 0; i < arrayOfLiIni.length; i++) {
-      console.log(arrayOfLiIni);
       $('.places-list').append(arrayOfLiIni[i]);
     }
   }
