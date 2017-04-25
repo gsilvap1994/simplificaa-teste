@@ -22,7 +22,7 @@ main {
   background-color: #EE4123;
 }
 
-.title{
+.text-hp{
   color: #EE4123;
 }
 
@@ -40,4 +40,17 @@ main {
   color: red;
   font-weight: 900;
   margin-left: 2%;
+}
+
+#search {
+  background-color: #EE4123;
+}
+
+#list {
+  background-color: #EE4123;
+}
+
+.text-list {
+  color: #EE4123;
+  font-weight: 900;
 }
