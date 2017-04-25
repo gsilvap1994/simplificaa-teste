@@ -31,3 +31,13 @@ main {
   height: 400px;
   width: 600px;
 }
+
+.select {
+  margin-top: 2%;
+}
+
+.error-msg {
+  color: red;
+  font-weight: 900;
+  margin-left: 2%;
+}

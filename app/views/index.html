@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplificaa | Oficinas</title>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:700" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/Simplificaa-logo.png">
     <link rel="stylesheet" href="/css/style.css">
   </head>
@@ -23,27 +23,26 @@
     <main>
       <div class="container">
         <div class="row">
-          <h5 class="title">Abaixo, digite um indereço ou cep, e então selecione entre as opções para ver as oficinas perto de você.</h5>
+          <h5 class="title">Abaixo, digite um indereço ou cep, e então selecione entre os filtros para ver as oficinas perto de você.</h5>
           <div class="col s8">
             <div class="input-field ">
               <input type="text" name="address" id="address" >
               <label for="address">Endereço/CEP</label>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s4 select">
+            <select id="select-option">
+              <option value="" disabled selected>Escolha entre os filtros abaixo</option>
+              <option value="1">Distância</option>
+              <option value="2">Avaliação</option>
+            </select>
+            <label>Materialize Select</label>
+          </div>
+          <div class="col s12">
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="search">Pronto</button>
+            <span class="error-msg"></span>
+          </div>
 
-            <!-- <select> -->
-              <!-- <option value="" disabled selected>Choose your option</option> -->
-              <!-- <option value="2">Option 2</option> -->
-              <!-- <option value="1">Option 1</option> -->
-              <!-- <option value="3">Option 3</option> -->
-            <!-- </select> -->
-            <!-- <label>Materialize Select</label> -->
-          </div>
-          <div class="col s12 btn-div">
-            <button class="btn waves-effect waves-light" type="submit" name="action" id="search">Pronto
-            </button>
-          </div>
         </div>
         <div id="map">
 
@@ -77,9 +76,8 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX-diejy6o0Lx7kAuD3CrynDOQp25Yl2U&libraries=places"></script>
-    <!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX-diejy6o0Lx7kAuD3CrynDOQp25Yl2U&libraries=places"></script>->
     <script type="text/javascript" src="js/map.js"></script>
-    <!-- <script type="text/javascript" src="js/searches.js"></script> -->
+    <script type="text/javascript" src="js/select.js"></script>
   </body>
 </html>
